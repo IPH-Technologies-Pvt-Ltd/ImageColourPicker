@@ -26,6 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var copyForRGB: UIButton!
     @IBOutlet weak var colourPickerBtn: UIButton!
     @IBOutlet weak var selectPhotoLbl: UILabel!
+    @IBOutlet weak var displayTextLbl: UILabel!
     
     
     
@@ -71,7 +72,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
-    
+    //MARK: -setUpUI
     func setUpUI() {
         
         myCollectionView.delegate = self
@@ -140,8 +141,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             return
         }
         
-        for index in 0...7 {
-            cells[index].backgroundColorView.backgroundColor = colors[index*colors.count/8]
+        for index in 0...11 {
+            cells[index].backgroundColorView.backgroundColor = colors[index*colors.count/12]
         }
         
         
@@ -155,6 +156,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             colourPickerBtn.isHidden = false
             viewForColorPicker.isHidden = false
             selectPhotoLbl.isHidden = true
+            displayTextLbl.isHidden = true
         }
         dismiss(animated: true, completion: nil)
     }
@@ -227,11 +229,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
 }
 
+
+//MARK: -extension
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  8
+        return  12
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
