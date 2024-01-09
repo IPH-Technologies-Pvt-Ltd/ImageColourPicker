@@ -4,8 +4,11 @@ ImageColourPicker is a user-friendly app that allows users to select images from
 
 ## Requirements
 Xcode 12.0 or later
+
 Swift 5.0 or later
+
 iOS 12.0 or later
+
 
 ## Installation
 
