@@ -36,7 +36,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) fil
 - [FontAwesomeSwift](https://github.com/thii/FontAwesome.swift) - Used for choose HEX and RGB colour with it's code from an image.
 
 ## Video
-![Simulator Screen Recording - iPhone 14 Pro Max - 2024-01-09 at 11 33 39](https://github.com/IPH-Technologies-Pvt-Ltd/ImageColourPicker/assets/124868129/86861d0f-dc6c-4d66-9175-4e542bcc3eb6)
+
+![Simulator Screen Recording - iPhone 14 Pro Max - 2024-01-09 at 16 43 05](https://github.com/IPH-Technologies-Pvt-Ltd/ImageColourPicker/assets/124868129/7c050824-8a06-4861-8e9f-aff95d9567cf)
 
 
 
